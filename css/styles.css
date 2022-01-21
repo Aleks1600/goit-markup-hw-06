@@ -626,11 +626,14 @@ img {
 .footer-icon-link:focus {
   background-color: var(--accent-color);
 }
+.footer-text-title.label-text {
+  display: block;
+}
 .container-footer-subscription {
   width: 570px;
   margin-left: 93px;
 }
-.subscription-form {
+.subscription-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
