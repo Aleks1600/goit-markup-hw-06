@@ -203,7 +203,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
@@ -755,6 +754,10 @@ img {
   padding-left: 40px;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
+  cursor: pointer;
+}
+.form-field-comment {
+  margin-bottom: 20px;
 }
 
 .form-text {
@@ -772,15 +775,24 @@ img {
   border-color: var(--accent-color);
   outline: none;
 }
+.form-text:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
 .form-input:focus + .input-icon {
   fill: var(--accent-color);
+}
+
+.form-field-policy {
+  margin-bottom: 30px;
 }
 .check-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primery-text-color);
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .check-text span {
   width: 16px;
@@ -798,6 +810,7 @@ img {
   line-height: 1.71;
   text-decoration-line: underline;
   color: var(--accent-color);
+  margin-left: 3px;
 }
 .policy-icon {
   fill: none;
@@ -808,6 +821,28 @@ img {
 }
 .policy-check:checked + .check-text .policy-icon {
   fill: var(--secondary-text-color);
+}
+.button-submit {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #188ce8;
 }
 
 .modal-close {
