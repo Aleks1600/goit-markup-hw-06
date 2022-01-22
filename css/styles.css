@@ -860,7 +860,15 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+  color: var(--last-logo-color);
+  transition-property: color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 .modal-icon {
-  fill: var(--last-logo-color);
+  fill: currentColor;
+}
+.modal-close:hover,
+.modal-close:focus {
+  color: var(--accent-color);
 }
