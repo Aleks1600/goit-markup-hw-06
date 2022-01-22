@@ -808,7 +808,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-decoration-line: underline;
+  border-bottom: 1px solid var(--accent-color);
   color: var(--accent-color);
   margin-left: 3px;
 }
